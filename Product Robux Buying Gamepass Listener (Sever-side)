@@ -25,7 +25,7 @@ local Header = Instance.new("TextLabel")
 Header.TextWrapped = true
 Header.TextColor3 = Color3.fromRGB(255, 255, 255)
 Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Header.Text = "Product Robux Buying Gamepass Listener \n(Sever-side)"
+Header.Text = "Product Robux Buying Gamepass Listener"
 Header.Name = "Header"
 Header.Size = UDim2.new(0, 197, 0, 19)
 Header.Position = UDim2.new(0.025145066902041435, 0, 0.03183024004101753, 0)
@@ -569,7 +569,7 @@ HookBtn.MouseButton1Click:Connect(function()
         return
     end
 
-    print("Falsely Bought product:", productID)
+    print("False Bought Gamepass", productID)
 
     MarketplaceService:SignalPromptProductPurchaseFinished(
         game:GetService("Players").LocalPlayer.UserId,
@@ -585,7 +585,7 @@ GamepassBtn.MouseButton1Click:Connect(function()
         return
     end
 
-    print("Falsely Bought product:", productID)
+    print("False Bought Gamepass", productID)
 
     MarketplaceService:SignalPromptGamePassPurchaseFinished(
         game:GetService("Players").LocalPlayer,
@@ -601,7 +601,7 @@ BulkBtn.MouseButton1Click:Connect(function()
         return
     end
 
-    print("Falsely Bought product:", productID)
+    print("False Buys Gamepass", productID)
 
     MarketplaceService:SignalPromptBulkPurchaseFinished(
         game:GetService("Players").LocalPlayer.UserId,
@@ -775,7 +775,7 @@ function addLog(pName, purchasedId, wasPurchased)
     Ico.Parent = CopyID
 
     CopyID.MouseButton1Click:Connect(function()
-        print("Copied!")
+        print("! Copyed Gamepass !")
         setclipboard(tostring(purchasedId))
     end)
 end
