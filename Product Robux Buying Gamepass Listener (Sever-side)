@@ -34,7 +34,7 @@ Header.BackgroundTransparency = 1
 Header.TextXAlignment = Enum.TextXAlignment.Left
 Header.TextSize = 12
 Header.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Header.TextScaled = false
+Header.TextScaled = true
 Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Header.Parent = mainbg
 
